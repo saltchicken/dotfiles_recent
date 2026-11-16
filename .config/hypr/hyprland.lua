@@ -42,14 +42,34 @@ hl.workspace_rule({
 })
 
 hl.window_rule({
-	name = "center-zenity-ollama-vision",
+	name = "center-yad-ollama-vision",
 	match = {
-		class = "^zenity$",
+		class = "^yad$",
 		title = "^Ollama Vision.*",
 	},
 	float = true,
 	center = true,
 })
+
+hl.window_rule({
+	name = "center-yad-select-images",
+	match = {
+		class = "^yad$",
+		title = "^Select Image.*",
+	},
+	float = true,
+	center = true,
+})
+
+-- hl.window_rule({
+-- 	name = "center-zenity-ollama-vision",
+-- 	match = {
+-- 		class = "^zenity$",
+-- 		title = "^Ollama Vision.*",
+-- 	},
+-- 	float = true,
+-- 	center = true,
+-- })
 
 --##################
 
